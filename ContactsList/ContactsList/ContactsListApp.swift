@@ -10,11 +10,11 @@ import SwiftUI
 
 @main
 struct ContactsListApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView(store: Store(initialState: ContactsFeature.State()) {
-                ContactsFeature()
-            })
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView(store: Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+      })
     }
+  }
 }
